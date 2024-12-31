@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "server_app"
+version = "0.1.0"
+requires-python = ">=3.7"
+authors = [{name = "Max Wiklund"},]
+description = "Server to recive encrypted keystrokes."
+dependencies = ["cryptography", "Flask"]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["app.py"]
+
+
+[tool.ruff]
+line-length = 88
+
+[tool.isort]
+line_length = 88
+
