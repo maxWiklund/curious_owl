@@ -49,7 +49,7 @@ def process_data():
     decrypted_message = aesgcm.decrypt(nonce, ciphertext, associated_data=None)
 
     print("Json data: ", request.json)
-    print("Decrypted Message:", decrypted_message)
+    print(decrypted_message.decode("utf-8"))
 
     return (
         jsonify(

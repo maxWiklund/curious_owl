@@ -12,3 +12,4 @@ rand = "0.8.5"     # For generating a random nonce
 hex = "0.4"
 serde_json = "1.0.134"
 clap = { version = "4.1", features = ["derive"] }
+chrono = "0.4"
